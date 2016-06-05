@@ -1,0 +1,9 @@
+{% extends 'h4la/base.html' %}
+{% block body_block %}
+<div id='map'></div>
+{% endblock %}
+{% block script_block %}
+L.mapbox.accessToken = 'pk.eyJ1IjoicmVhbGFsbGVudHJhbiIsImEiOiJjaXAxbnRpbDkwMTV0dmJtNWd1bnFtNXZpIn0.LcBpDcUp7uwuPP7JGb9Yng';
+var map = L.mapbox.map('map', 'mapbox.streets')
+.setView([40, -74.50], 9);
+{% endblock %}
